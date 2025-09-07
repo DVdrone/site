@@ -6,10 +6,10 @@
     "h": 1067
   },
   {
-    "src": "photos/orthophoto.png",
+    "src": "photos/orthophoto.jpg",
     "alt": "Orthomosaïque d’un ancien pit de sable — la forme rappelle un cœur",
-    "w": 1067,
-    "h": 1067
+    "w": 1600,
+    "h": 1480
   },
   {
     "src": "photos/lac-paddle.jpg",
@@ -18,4 +18,5 @@
     "h": 1067
   }
 ]
+
 
