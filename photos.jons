@@ -1,0 +1,20 @@
+[
+  {
+    "src": "photos/maison-lac.jpg",
+    "alt": "Vue aérienne d’une maison au bord d’un lac",
+    "w": 1600,
+    "h": 1067
+  },
+  {
+    "src": "photos/orthophoto.png",
+    "alt": "Orthomosaïque d’un ancien pit de sable — la forme rappelle un cœur",
+    "w": 1920,
+    "h": 1920
+  },
+  {
+    "src": "photos/lac-paddle.jpg",
+    "alt": "Survol au coucher du soleil",
+    "w": 1600,
+    "h": 1067
+  }
+]
