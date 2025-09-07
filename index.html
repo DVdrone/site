@@ -3,41 +3,54 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DV Drone — Imagerie aérienne à Rouyn‑Noranda</title>
-  <meta name="description" content="Photos et vidéos aériennes par drone à Rouyn‑Noranda et en Abitibi. Imagerie aérienne pour immobilier, chantier, orthomosaïques et plus." />
+  <title>DV Drone — Imagerie aérienne à Rouyn-Noranda</title>
+  <meta name="description" content="Photos et vidéos aériennes par drone à Rouyn-Noranda et en Abitibi. Imagerie aérienne pour immobilier, chantier, orthomosaïques et plus." />
   <meta property="og:title" content="DV Drone — Imagerie aérienne" />
   <meta property="og:description" content="Photos et vidéos aériennes en Abitibi-Témiscamingue." />
   <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#0f172a" />
+  <meta name="theme-color" content="#0f1c0f" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root { --bg:#0b1220; --card:#0f172a; --muted:#94a3b8; --text:#e5e7eb; --accent:#38bdf8; --ring:#22d3ee; }
+    :root { 
+      --bg:#0f1c0f; --card:#1a2916; 
+      --muted:#cbd5c0; --text:#f5f7f5; 
+      --accent:#4c7036; --ring:#6b8e23; 
+    }
     *{box-sizing:border-box}
-    html,body{height:100%}
-    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#0b1220 0%,#0a0f1a 100%);color:var(--text);}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      background:linear-gradient(180deg,var(--bg) 0%,#263321 100%);color:var(--text);}
     a{color:inherit;text-decoration:none}
     .container{max-width:1100px;margin-inline:auto;padding:24px}
     .nav{display:flex;gap:20px;align-items:center;justify-content:space-between}
-    .brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.2px}
-    .brand .logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--ring));display:grid;place-items:center;color:#0b1220;font-weight:800}
-    .pill{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border:1px solid #23324a;border-radius:999px;color:var(--muted);font-size:12px}
-    .hero{padding:56px 0 32px;display:grid;gap:24px}
-    .hero h1{font-size:clamp(28px,5vw,44px);line-height:1.05;margin:0}
-    .hero p{color:var(--muted);max-width:60ch;margin:0}
-    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
-    .btn{padding:12px 16px;border-radius:12px;border:1px solid #23324a;background:#111a2d;transition:.2s transform,.2s box-shadow}
-    .btn:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(34,211,238,.15)}
-    .btn.primary{background:linear-gradient(135deg,var(--accent),var(--ring));color:#06101a;border-color:transparent;font-weight:700}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:700}
+    .brand .logo{width:36px;height:36px;border-radius:10px;
+      background:linear-gradient(135deg,var(--accent),var(--ring));
+      display:grid;place-items:center;color:#0f1c0f;font-weight:800}
+    .pill{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;
+      border:1px solid #3a4b34;border-radius:999px;color:var(--muted);font-size:12px}
+    .hero{padding:56px 0 32px;display:grid;gap:24px;text-align:center}
+    .hero h1{font-size:clamp(28px,5vw,44px);line-height:1.1;margin:0}
+    .hero p{color:var(--muted);max-width:60ch;margin:0 auto}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:12px}
+    .btn{padding:12px 16px;border-radius:12px;border:1px solid #3a4b34;
+      background:#1a2916;transition:.2s;cursor:pointer}
+    .btn:hover{background:#22361f}
+    .btn.primary{background:linear-gradient(135deg,var(--accent),var(--ring));
+      color:#0f1c0f;border:none;font-weight:700}
     .grid{display:grid;gap:16px;grid-template-columns:repeat(12,1fr)}
-    .card{grid-column: span 4; background:rgba(17,26,45,.55);border:1px solid #23324a;border-radius:16px;padding:18px}
+    .card{grid-column: span 4; background:rgba(26,41,22,.55);
+      border:1px solid #3a4b34;border-radius:16px;padding:18px}
     .card h3{margin:0 0 6px 0;font-size:16px}
     .card p{margin:0;color:var(--muted);font-size:14px}
     .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
-    .ph{aspect-ratio:4/3;background:#0d1528;border:1px solid #1e2a42;border-radius:12px;position:relative;overflow:hidden}
-    .ph::after{content:"Prévisualisation";position:absolute;inset:auto 8px 8px;opacity:.6;font-size:12px;color:var(--muted)}
-    .footer{margin-top:48px;padding:24px 0;color:#9fb0c7;border-top:1px solid #23324a;font-size:14px}
+    .ph{aspect-ratio:4/3;background:#142014;border:1px solid #2a3a28;
+      border-radius:12px;position:relative;overflow:hidden}
+    .ph::after{content:"Prévisualisation";position:absolute;inset:auto 8px 8px;
+      opacity:.6;font-size:12px;color:var(--muted)}
+    .footer{margin-top:48px;padding:24px 0;color:#a3b8a0;
+      border-top:1px solid #3a4b34;font-size:14px;text-align:center}
     @media (max-width: 900px){ .card{grid-column: span 6} }
     @media (max-width: 640px){ .card{grid-column: span 12} .nav{gap:12px} }
   </style>
@@ -57,11 +70,12 @@
 
   <main class="container">
     <section class="hero" id="hero">
-      <span class="pill">Rouyn‑Noranda · Abitibi‑Témiscamingue</span>
+      <span class="pill">Rouyn-Noranda, Qc · Abitibi-Témiscamingue</span>
       <h1>Imagerie aérienne simple, claire et abordable.</h1>
       <p>Photos et vidéos captées par drone pour l’immobilier, le suivi de chantier et les orthomosaïques de base. Livraison rapide, fichiers optimisés pour Centris et les réseaux sociaux.</p>
       <div class="cta">
-        <a class="btn primary" href="https://www.facebook.com/your-page-here" target="_blank" rel="noopener">Voir la page Facebook</a>
+        <a class="btn primary" href="https://facebook.com/dvdrone" target="_blank" rel="noopener">Facebook</a>
+        <a class="btn primary" href="https://instagram.com/dvdrone" target="_blank" rel="noopener">Instagram</a>
         <a class="btn" href="#contact">Demander une soumission</a>
       </div>
     </section>
@@ -92,18 +106,16 @@
 
     <section id="contact" style="margin-top:32px">
       <h2 style="margin:0 0 8px 0;font-size:20px">Contact</h2>
-      <p style="color:var(--muted);margin:0 0 12px 0">Vous avez un mandat en tête? Écrivez‑moi et décrivez votre besoin (adresse, type de visuel, échéance).</p>
+      <p style="color:var(--muted);margin:0 0 12px 0">Vous avez un mandat en tête? Écrivez-moi et décrivez votre besoin (adresse, type de visuel, échéance).</p>
       <div class="cta">
-        <a class="btn" href="mailto:david.vendette@dvdrone.ca">david.vendette@dvdrone.ca</a>
-        <a class="btn" href="tel:+18187621600">+1 (819) 762‑1600</a>
+        <a class="btn" href="mailto:info@dvdrone.ca">info@dvdrone.ca</a>
+        <a class="btn" href="tel:+18197621600">+1 (819) 760-0061</a>
       </div>
       <p style="color:var(--muted);margin-top:10px;font-size:13px">Entreprise locale — facture officielle et reçu électronique.</p>
     </section>
 
     <footer class="footer">
-      <div class="container" style="padding:0">
-        © <span id="year"></span> DV Drone · Rouyn‑Noranda. Tous droits réservés.
-      </div>
+      © <span id="year"></span> DV Drone · Rouyn-Noranda. Tous droits réservés.
     </footer>
   </main>
 
