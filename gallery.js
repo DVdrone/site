@@ -74,7 +74,7 @@
       if (p.alt){
         const cap = document.createElement("figcaption");
         cap.textContent = p.alt;
-        cap.style.cssText = "position:absolute;left:8px;top:8px;color:#dbe7d2;font-size:12px;opacity:.85;text-shadow:0 1px 2px rgba(0,0,0,.6)";
+        cap.style.cssText = "position:absolute;left:8px;top:8px;color:#dbe7d2;font-size:12px;opacity:.85;text-shadow:0 1px 2px rgba(255,255,255,.7);padding:2px 6px;border-radius:6px";
         fig.appendChild(cap);
       }
       container.appendChild(fig);
