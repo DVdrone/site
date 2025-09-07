@@ -103,14 +103,13 @@
       <h2 style="margin:0 0 12px 0;font-size:20px">Aperçu de réalisations</h2>
       <p style="color:var(--muted);margin:0 0 16px 0">
         Quelques exemples de captations aériennes. 
-        Découvrez davantage de contenus sur <a href="https://facebook.com/dvdrone.abitibi" target="_blank" style="color:var(--accent)">Facebook</a> 
-        et <a href="https://instagram.com/dvdrone" target="_blank" style="color:var(--accent)">Instagram</a>.
+        Découvrez davantage de contenus sur 
+        <a href="https://facebook.com/dvdrone.abitibi" target="_blank" style="color:var(--accent)">Facebook</a> 
+        et 
+        <a href="https://instagram.com/dvdrone" target="_blank" style="color:var(--accent)">Instagram</a>.
       </p>
-      <div class="gallery">
-        <div class="ph" role="img" aria-label="Exemple 1"></div>
-        <div class="ph" role="img" aria-label="Exemple 2"></div>
-        <div class="ph" role="img" aria-label="Exemple 3"></div>
-      </div>
+      <!-- Conteneur vide, rempli dynamiquement par gallery.js -->
+      <div id="gallery" class="gallery"></div>
     </section>
 
     <section id="contact" style="margin-top:32px">
@@ -137,5 +136,7 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+
+  <script defer src="gallery.js"></script>
 </body>
 </html>
