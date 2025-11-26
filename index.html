@@ -54,6 +54,17 @@
       border-top:1px solid #3a4b34;font-size:14px;text-align:center}
     @media (max-width: 900px){ .card{grid-column: span 6} }
     @media (max-width: 640px){ .card{grid-column: span 12} .nav{gap:12px} }
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: 1fr;   /* une seule colonne sur petits écrans */
+        justify-items: center;        /* centre le contenu si la largeur est limitée */
+      }
+
+      .gallery .ph {
+        width: 100%;
+        max-width: 520px;             /* optionnel : limite la largeur max par photo */
+      }
+    }
   </style>
 </head>
 <body>
