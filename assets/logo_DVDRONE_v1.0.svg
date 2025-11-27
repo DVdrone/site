@@ -1,0 +1,98 @@
+<svg width="200" height="240" viewBox="0 0 200 240"
+     xmlns="http://www.w3.org/2000/svg"
+     role="img" aria-labelledby="title desc">
+  <title id="title">Logo DV Drone</title>
+
+  <defs>
+    <style>
+      :root {
+        --vert-fonce:   #0f1c0f;
+        --vert-accent:  #102d12;
+        --texte:        #111111;
+      }
+
+      .drone-body { fill: var(--vert-fonce); }
+
+      .drone-body-inner {
+        fill: none;
+        stroke: #ffffff;
+        stroke-width: 2.2;
+      }
+
+      .drone-arm {
+        stroke: var(--vert-fonce);
+        stroke-width: 5;
+        stroke-linecap: round;
+      }
+
+      .propeller {
+        fill: var(--vert-accent);
+        opacity: 0.95;
+      }
+
+      .propeller-blur {
+        fill: none;
+        stroke: var(--vert-accent);
+        stroke-width: 4;
+        opacity: 0.20;
+      }
+
+      .logo-text {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        fill: var(--texte);
+      }
+    </style>
+  </defs>
+
+  <!-- Groupe du drone -->
+  <g transform="translate(100,100)">
+
+    <!-- Bras en X -->
+    <line x1="0" y1="0" x2="-35" y2="-35" class="drone-arm" />
+    <line x1="0" y1="0" x2="35"  y2="35"  class="drone-arm" />
+    <line x1="0" y1="0" x2="35"  y2="-35" class="drone-arm" />
+    <line x1="0" y1="0" x2="-35" y2="35"  class="drone-arm" />
+
+    <!-- Hélices -->
+    <circle cx="-35" cy="-35" r="16" class="propeller" />
+    <circle cx="35"  cy="35"  r="16" class="propeller" />
+    <circle cx="35"  cy="-35" r="16" class="propeller" />
+    <circle cx="-35" cy="35"  r="16" class="propeller" />
+
+    <!-- Halos -->
+    <circle cx="-35" cy="-35" r="25" class="propeller-blur" />
+    <circle cx="35"  cy="35"  r="25" class="propeller-blur" />
+    <circle cx="35"  cy="-35" r="25" class="propeller-blur" />
+    <circle cx="-35" cy="35"  r="25" class="propeller-blur" />
+
+    <!-- Corps central -->
+    <circle cx="0" cy="0" r="19" class="drone-body" />
+    <circle cx="0" cy="0" r="15" class="drone-body-inner" />
+
+    <!-- Icône centrale : pointeur de carte -->
+    <g class="icon-center" transform="translate(0,-1)">
+      <!-- Cercle intérieur -->
+      <circle cx="0" cy="-4" r="5"
+              fill="#ffffff"/>
+      <!-- Ligne extérieure -->
+      <path
+        d="M 0 0 L 0 10"
+        fill="none"
+        stroke="#ffffff"
+        stroke-width="2"
+        stroke-linecap="round" />
+    </g>
+
+  </g>
+
+  <!-- Texte -->
+  <text x="100" y="190"
+        text-anchor="middle"
+        class="logo-text">
+    DV DRONE
+  </text>
+
+</svg>
